@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Screen share">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Client-side Screen share">
+  <meta itemprop="name" content="Screen share">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+
+  <base target="_blank">
+
+  <script defer src="./peerjs.min.js"></script>
+  <script src="./socket.io.js" defer></script>
+  <!-- <script src="./script.js" defer></script> -->
+  <link href="./host.css" rel="stylesheet" type="text/css">
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="container">
+    <video id="gum-local" autoplay playsinline muted></video>
+    <button id="startButton" disabled>Start</button>
+    <div>
+      <button id="record" disabled>Start Sharing</button>
+    </div>
+    <div id="room-url"></div>
+  </div>
+
+  
+  
+  <script defer src=./adapter-latest.js></script>
+  <script defer src=./host.js></script>
+ 
+</body>
+
+</html>
